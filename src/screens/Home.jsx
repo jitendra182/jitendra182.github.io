@@ -6,6 +6,7 @@ import NavBar from "./NavBar";
 import Resume from "./Resume";
 import Contact from "./Contact";
 import About from "./About";
+import Profile from "./Profile";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
         <HashRouter>
         <NavBar />
         <Switch>
+        <Route exact path="/profile" component={Profile}/>
           <Route exact path="/resume" component={Resume}/>
           <Route exact path="/about" component={About}/>
           <Route exact path="/contact" component={Contact}/>
